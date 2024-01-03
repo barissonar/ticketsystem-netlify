@@ -15,7 +15,7 @@ const UnansweredList = () => {
 
         try {
             // GET isteği gönder ve yanıtı bekleyerek al
-            const response = await axios.get("http://127.0.0.1:8000/ticket/admin/ticket-list/activeticket");
+            const response = await axios.get("https://xxxbarxxx.pythonanywhere.com/ticket/admin/ticket-list/activeticket");
       
             console.log("API yanıtı:", response.data);
 

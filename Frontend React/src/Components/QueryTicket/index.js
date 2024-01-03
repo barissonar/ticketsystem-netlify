@@ -19,7 +19,7 @@ const QueryTicket = () => {
     const getTicketDetail = async () => {
         try {
             // Axios'un get metodu ile GET isteği yapılır
-            const response = await axios.get(`http://127.0.0.1:8000/ticket/user/query-request/${ticketcode}`);
+            const response = await axios.get(`https://xxxbarxxx.pythonanywhere.com/ticket/user/query-request/${ticketcode}`);
             setTicketDetail(response.data);
             navigate(`/basvuru/${ticketcode}`);
             console.log(ticketdetail,"göremiyorum...");

@@ -13,7 +13,7 @@ const CreateTicket = () => {
     const postFormDataToAPI = async (formDataToSend) => {
         try {
         
-            const response = await axios.post("http://127.0.0.1:8000/ticket/user/create-request", formDataToSend, {
+            const response = await axios.post("https://xxxbarxxx.pythonanywhere.com/ticket/user/create-request", formDataToSend, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

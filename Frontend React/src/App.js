@@ -33,7 +33,7 @@ function App() {
     const getAdmin = async () => {
         try {
             // GET isteği
-            const response = await axios.get("http://127.0.0.1:8000/ticket/admin/authanticate", {
+            const response = await axios.get("https://xxxbarxxx.pythonanywhere.com/ticket/admin/authanticate", {
                 withCredentials: true,
             });
             

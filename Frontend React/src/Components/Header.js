@@ -14,7 +14,7 @@ const Header = () => {
        
         try {
          
-            const response = await axios.post("http://127.0.0.1:8000/ticket/admin/logout");
+            const response = await axios.post("https://xxxbarxxx.pythonanywhere.com/ticket/admin/logout");
     
           
             console.log(response.data);

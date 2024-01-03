@@ -22,7 +22,7 @@ const AdminTicketDetail = () => {
 
         try {
             
-            const response = await axios.get(`http://127.0.0.1:8000/ticket/admin/query-request/${ticketid}`);
+            const response = await axios.get(`https://xxxbarxxx.pythonanywhere.com/ticket/admin/query-request/${ticketid}`);
       
             console.log("API yanıtı:", response.data);
 
@@ -57,7 +57,7 @@ const AdminTicketDetail = () => {
     const updateTicket = async (updatedData) => {
 
         try {
-            const response = await axios.put(`http://127.0.0.1:8000/ticket/admin/update-request/${ticketid}`, updatedData);
+            const response = await axios.put(`https://xxxbarxxx.pythonanywhere.com/ticket/admin/update-request/${ticketid}`, updatedData);
             console.log("Güncelleme Başarılı:", response.data);
             toast.success("Güncelleme işlemi başarılı.");
 
@@ -81,7 +81,7 @@ const AdminTicketDetail = () => {
 
     const sendResponse = async(responseData) => {
         try {
-            const response = await axios.post(`http://127.0.0.1:8000/ticket/admin/create-request/${ticketid}`, responseData);
+            const response = await axios.post(`https://xxxbarxxx.pythonanywhere.com/ticket/admin/create-request/${ticketid}`, responseData);
             // İstek başarılıysa burada işlemler yapabilirsiniz
             console.log("İstek başarılı:", response.data);
             toast.success("Cevap başarıyla gönderildi.");
